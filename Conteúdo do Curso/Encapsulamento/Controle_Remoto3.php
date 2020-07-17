@@ -1,5 +1,5 @@
 <?php
-require_once 'encapsulamento2.php';
+require_once 'Controle_Remoto2.php';
     class ControleRemoto implements Controlador{      
         //Atributos
         private $volume;

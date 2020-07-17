@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        require_once 'encapsulamento3.php';
+        require_once 'Controle_Remoto3.php';
 
         $c1 = new ControleRemoto;
         $c1->ligar();      
