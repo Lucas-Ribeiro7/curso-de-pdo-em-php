@@ -1,15 +1,13 @@
 <?php
-    class pessoa{
+    abstract class pessoa{
         private $nome;
         private $idade;
         private $sexo;
-
-        public function __construct($no, $id, $se){
-            $this->setNome($no);
-            $this->setIdade($id);
-            $this->setSexo($se);
+        
+        public final function fazerAniv(){
+            $this->setIdade($this->getIdade() + 1);
         }
-
+        
         public function getNome(){
             return $this->nome;
         }
@@ -31,7 +29,5 @@
             $this->sexo = $se;
         }
 
-        public function fazerAniv(){
-            $this->setIdade($this->getIdade() + 1);
-        }
+        
     }

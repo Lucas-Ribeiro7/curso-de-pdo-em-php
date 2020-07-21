@@ -23,6 +23,9 @@ require_once 'pessoa.php';
             $this->curso = $cur;
         }
 
+        public function pagarMensalidade(){
+            echo "<p>O Aluno(a) " . $this->getNome() . " pagou a sua mensalidade com sucesso</p>";
+        }
         public function cancelarMatr(){
             $this->setMatr(0);
             echo "<p>" . $this->getNome() . " sua matricula foi cancelada</p>";
